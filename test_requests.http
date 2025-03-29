@@ -1,0 +1,35 @@
+### Get token
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+  "username": "analytics_user",
+  "password": "secret"
+}
+
+### Make a query
+POST http://localhost:3000/query
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "How many sales were there last month?"
+}
+
+### Explain a query
+POST http://localhost:3000/explain
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "Show me total sales by region"
+}
+
+### Validate a query
+POST http://localhost:3000/validate
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "List all customers who joined in January"
+}
