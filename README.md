@@ -35,5 +35,4 @@ Use the provided `test_requests.http` file with VS Code REST Client or import in
 
 Deploy to:
 - Render
-- Heroku
-- Railway
+link- https://genai-analytics-sim-node.onrender.com
